@@ -5,14 +5,14 @@ BBEnterpriseUpdater
 ## Usage
 
 ```objective-c
-    [BBEnterpriseUpdater checkVersionWithURL:[NSURL URLWithString:@"http://example.com/BBUpdaterExample.plist"]
-                                     success:^(BOOL requiresUpdate, NSString *versionString, NSURL *updateURL) {
-                                         if (requiresUpdate) {
-                                         	// See if the user wants to update to the latest version
-                                         }
-                                     } failure:^(NSError *error) {
-                                         
-                                     }];
+[BBEnterpriseUpdater checkVersionWithURL:[NSURL URLWithString:@"http://example.com/BBUpdaterExample.plist"]
+                                 success:^(BOOL requiresUpdate, NSString *versionString, NSURL *updateURL) {
+                                     if (requiresUpdate) {
+                                     	// See if the user wants to update to the latest version
+                                     }
+                                 } failure:^(NSError *error) {
+                                     
+                                 }];
 
 ```
 
